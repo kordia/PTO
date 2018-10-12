@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PTO Program</title>
+</head>
+<body>
+    <h1>PTO Program</h1>
+    <h2>PTO Vacation Time</h2>
+
+    PTO (Paid Time Off) Program
+
+    V1
+    5hrs Paycheck
+    Bi- weekly
+    PTO for 1yr
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        p{
+            font-size: 26px;
+            font-weight: bold;
+        }
+        #output{
+            color: red;
+        }
+    </style>
+        <ol>
+            <li>Start</li>
+            <li>Set INT paycheckperyear =26</li>
+            <li>Set INT Input hrsperpaycheck =5</li>
+            <li>Display "This is a simple outputs how many hours you earn a year for PTO (Paid Time Off).</li>
+            <li>Dsiplay you earn totalHoursPerYear hours per year."</li>
+            <li>Display "You earn 5hrs per paycheck. We get 26 paycheck a year."</li>
+            <li>End</li>
+        </ol>
+
+ 
+        <p>What is your gross Pay?</p>
+        <form action="#" onsubmit="paycheckperyear()">
+            <label for= "payCheckPerYear"> How many Checks earned in a year?</label>
+            <input type= "text" id="payCheckPerYear">
+            <label for= "hrsPerPayCheck"> How many hours worked?</label>
+            <input type ="text" id="hrsperpaycheck" value="0">
+            <input type= "submit" value="submit">
+        </form>
+        <p>Your total hours per pay check <span id="output"></span>.</p>
+        <script src="js/calc.js"></script>
+
+</body>
+</html>

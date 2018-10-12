@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PTO Program</title>
+</head>
+<body>
+        - - - - - - - - - - - - -
+        V2
+        1-5yrs =5 hrs
+        equal to or greater than 5yrs= 6hrs
+        equal to or 10yrs= 7hrs
+        PTO for 1 yr in weeks
+    
+        <p>A simple program that calculates the PtO(Paid time Off) for the corresponding amount of time
+        the employee has work in years. Returns amonut of PtO in weeks.</p>
+    
+        <ol>
+            <li>Start</li>
+            <li>SET INT hrsperpaycheck = 5</li>
+            <li>SET INT paycheckperyear = 26</li>
+            <li>Display "How many years have you worked?"</li>
+            <li>Input yearsWorked</li>
+            <li>If yearsWorked leass than 5 hrs Perpaycheck</li>
+            <li>If yearsWorked equal to or greater than 5 hrsperpaycheck =6</li>
+            <li>if yearsWorked equal to or greater than 10 hrsperpaycheck =7 </li>
+            <li>SET INT totalHoursperYear = hrsPerPaycheck * paycheckPerYear</li>
+            <li>Set Real weeks = totalHoursPerYear/40</li>
+            <li>Display "You get" weeks" weeks off a year"</li>
+            <li>END</li>
+        </ol>
+    
+    
+        <p>How many weeks Paid Time Off in a year?</p>
+        <form action="#" onsubmit="hours()">
+            <input type = "text" id="inner">
+            <input type= "submit" name="submit">
+            <p>Your hours total to: <strong><span 
+            id="outter"></span></strong></p>
+        </form>
+      
+        <script src="js/weekstimeoff.js"></script>
+    
+   
+
+</body>
+</html>

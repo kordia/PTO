@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>Simple Investment Calculator</p>
+
+    <p>A simple investment calculator that takes an initial investment amount in dollars. 
+        Then accepts an interest rate between 2-7%. Then takes an additional amount of money 
+        for each term of the investment. Enter a investment term(ie. how long). Then specify 
+        that the term will be in years or months. Result will be your total interest earned 
+        and the total amount in your account.</p>
+    
+
+    <ol>
+        <li>Start</li>
+        <li>Set interest rate between 2-7%</li>
+        <li>Display interest rate</li>
+        <li>Set how much money to investment</li>
+        <li>Display "how much money to invest" </li>
+        <li>SET the amount of money in account</li>
+        <li>Display amonut of money in account</li>
+        <li>SET how long will the money be invested</li>
+        <li>Display how long the money wiil be invested monthly or yearly</li>
+        <li>Display the intevetment term</li>
+        <li>Display "Your Total amount earned"</li>
+        <li>Display total amount of maoney</li>
+        <li>END</li>
+    </ol>
+
+    <p>What is your total interest earned and and the total amonut in your account</p>
+    <form action="#" onsubmit="investmentCalc()">
+        <p>How much is your intial investment</p>
+        <input type ="text" id="initInvestment">
+        <p>What would you like your Investment to be?</p>
+       <select name="interestRate" id= "interestRate">
+            <option value="2%">2%</option>
+            <option value="3%">3%</option>
+            <option value="4%">4%</option>
+            <option value="5%">5%</option>
+            <option value="6%">6%</option>
+            <option value="7%">7%</option>
+       </select>
+       <p>How long would you like to invest</p>
+       <input type ="text" id="addInvestment">
+        <p>Is your Investment term monthly or yearly?</p>
+        <select>
+            <option value="monthly">monthly</option>
+            <option value="yearly">yearly</option>
+        </select>
+        <p>Would you like to contribute additional amonut to each term</p>
+        <input type ="text" id="">
+        <p>Input your toatal amonut in account</p>
+        <input type ="text" id="amountInAccount">
+        <input type= "submit" name="submit">
+        <p>Your total amount earned <span id="output"></span>.</p>
+        <script src="js/investment-calc.js"></script>
+    </form>
+
+
+
+
+</body>
+</html>

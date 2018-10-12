@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pto-3</title>
+</head>
+<body>
+    <h3>PTO v3.0</h3>
+    <p>A simple PTO (Paid Time Off) calculator that uses how many years you worked to get correct
+        PTO rate. Then uses how many weeks you have worked so far this year to calculate total PTO to
+        date. Then deducts any PTO that you have taken to date. Results can be returned in hours or days
+        or weeks.</p>
+
+    <ol>
+        <li>START</li>
+        <Li>SET "how many years worked" </Li>
+        <li>Diplay number of years</li>
+        <li>SET "how many weeks you have worked"</li>
+        <li>Display number of years worked</li>
+        <li>SET "how many years worked" </li>
+        <li>Display Deducted number of years</li>
+        <li>SET number of years deducted</li>
+        <li>Display any deducted PTO to date</li>
+        <LI>END</LI>
+    </ol>
+
+    <p>How many deducted Paid Time Off taken to date</p>
+    <form action="#" onsubmit="deductedPTO()" >
+        <p>Input years worked here.</p>
+        <input type = "text" id="yearsWorked">
+        <p>Input weeks woked here.</p>
+        <input type ="text" id="weeksWorked">
+        <p>Input Hours worked Used here</p>
+        <input type = "text" id="hoursUsed">
+        <input type= "submit" value="submit">
+
+    </form>
+
+    <p>Your total deducted Paid Time off is : <span id="output"></span>.</p>
+    <script src="js/deductedPTO.js"></script>
+      
+</body>
+</html>
