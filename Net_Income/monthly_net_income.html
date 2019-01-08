@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Net Income</title>
+</head>
+<body>
+    <p> This is a calculator designed to input monlthy inncome and 
+    add monthly expenses to get the net income</p>
+
+    <ol>
+        <li>START</li>
+        <li>DISPLAY "What is your Monthly income?"</li>
+        <li>Input Income</li>
+        <li>Set Monthly Expenses=</li>
+        <li>Display Housing</li>
+            <ol>
+                <li>Input Mortgage</li>
+                <li>Input Rent</li>
+                <li>Input Home Insurance</li>
+                <li>Input Repair Maintence</li>
+                <li>Input Water/Gas/Electricity</li>
+                <li>Input Cabile/TV/Internet</li>
+                <li>Input Phone & Cell</li>
+            </ol>
+        <li>Display Transportation</li>
+            <ol>
+                <li>Input Car Payment</li>
+                <li>Input Car Insurance</li>
+                <li>Input Gas</li>
+                <li>Input Car Repairs</li>
+            </ol>
+        <li>Display Food & Personal</li>
+            <ol>
+                <li>Input Groceries/ HouseHold</li>
+                <li>Input Clothing</li>
+                <li>Input Entertainment</li>
+                <li>Medical</li>
+                <li>Pet Supplies</li>
+                <li>Other Expenses</li>
+            </ol>
+        <li>SET Expenses = Housing + Transportation + Personal</li>
+        <li>SET netIncome = Expenses - Income</li>
+        <li>DISPLAY "Your Net income is  "."</li>
+        <li>END</li>
+    </ol>
+    
+    <p>What is your Net Income?</p>
+    <form action="#" onsubmit="netIncome()">
+        <p>What is your monthly income?</p>
+        <input type= "text" id="monthlyIncome">
+        <h3>Housing Expenses</h3>
+        <p>Mortgage</p>
+        <input type= "text" id="mortgage">
+        <p>Rent</p>
+        <input type= "text" id="rent">
+        <p>Home Insurance</p>
+        <input type= "text" id="homeInsurance">
+        <p>Repair Maintence</p>
+        <input type= "text" id="repairMaintence">
+        <p>Water/ Gas/ Electricity</p>
+        <input type= "text" id="waterGasElectricity">
+        <p>Cabile/ TV/ Internet </p>
+        <input type= "text" id="cabileTvInternet">
+        <h3>Transportation Expenses</h3>
+        <p>Car Payment</p>
+        <input type= "text" id="carPayment">
+        <p>Car Insurance</p>
+        <input type= "text" id="carInsurance">
+        <p>Gas/ Fuel</p>
+        <input type= "text" id="gasFuel">
+        <p>Car Repairs</p>
+        <input type= "text" id="carRepairs">
+        <h3>Food & Persoanl Expenses</h3>
+        <p>Grocieries/ Household</p>
+        <input type="text" id="groceriesHousehold">
+        <p>Clothing</p>
+        <input type= "text" id="clothing">
+        <p>Entertainment</p>
+        <input type= "text" id="entertainment">
+        <p>Medical</p>
+        <input type= "text" id="medical">
+        <p>Pet Supplies</p>
+        <input type= "text" id="petSupplies">
+        <p>Car Insurance</p>
+        <input type= "text" id="carInsurance">
+       
+        <input type= "submit" value="submit">
+    </form>
+
+
+    <p>Your Net Income is <span id="output"></span>.</p>
+    <script src="js/netIncome.js"></script>
+
+
+</body>
+</html>

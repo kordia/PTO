@@ -1,14 +1,14 @@
 
 function deductedPTO(){
     
-    // event.preventDefault();
+    var output = document.getElementById('output');
 
-    var payPerCheck = 26;
+    var payCheckPerYear = 26;
 
     var hrsPerPayCheck =5;
 
-    var totalHours = hrsPerPayCheck * payCheckPerYear;
+    var totalHoursPerYear = hrsPerPayCheck * payCheckPerYear;
 
-    document.write(totalHoursPerYear)
+   output.innerHTML = totalHoursPerYear;
 
 }
